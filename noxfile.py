@@ -125,16 +125,16 @@ setup_nox_logging()
 log.info(f"[container_env:{CONTAINER_ENV}]")
 
 ## Ensure REQUIREMENTS_OUTPUT_DIR path exists
-if not REQUIREMENTS_OUTPUT_DIR.exists():
-    try:
-        REQUIREMENTS_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    except Exception as exc:
-        msg = Exception(
-            f"Unable to create requirements export directory: '{REQUIREMENTS_OUTPUT_DIR}'. Details: {exc}"
-        )
-        log.error(msg)
+# if not REQUIREMENTS_OUTPUT_DIR.exists():
+#     try:
+#         REQUIREMENTS_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+#     except Exception as exc:
+#         msg = Exception(
+#             f"Unable to create requirements export directory: '{REQUIREMENTS_OUTPUT_DIR}'. Details: {exc}"
+#         )
+#         log.error(msg)
 
-        REQUIREMENTS_OUTPUT_DIR: Path = Path(".")
+#         REQUIREMENTS_OUTPUT_DIR: Path = Path(".")
 
 ## List of dicts describing a src file to copy to a specified destination file
 #  Ex: {"src": "config/.secrets.example.toml", "dest": "config/.secrets.toml"}
