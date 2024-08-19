@@ -102,6 +102,20 @@ INSTALLED_APPS = [
 ...
 ```
 
+You must also add the URL patterns for the app to the project's `urlpatterns` in `<django-project>/urls.py`
+
+```python title="Django project's urls.py"
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+  ## Include URLs for your app
+  path("myapp/", include("my_app.urls")),
+  ## Add a /admin route to your site
+  path("admin/", admin.site.urls)
+]
+```
+
 ### Creating a Django admin/"superuser"
 
 To prevent cross-site forgeries, generate a secret key and add replace `SECRET_KEY` in `settings.py`
