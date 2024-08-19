@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..",
+			"name": "Git Root"
+		},
+		{
+			"path": "../official_tutorials/django-polls-app",
+			"name": "Django Polls Official Tutorial"
+		}
+	],
+	"settings": {}
+}

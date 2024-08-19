@@ -1,0 +1,19 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+{% if latest_question_list %}
+<ul>
+    {% for question in latest_question_list %}
+    <li>
+        <!-- Method 1: uses the Django 'url' template tag to get URL from urlpatterns, the 'name' attribute -->
+        <!-- <a href="{ url 'detail' question.id %}">{{ question.question_text }}</a> -->
+
+        <!-- Method 2: uses the Django 'polls' namespaced app and the 'detail' url name/alias -->
+        <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %}
