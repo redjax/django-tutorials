@@ -1,8 +1,22 @@
-# Django Tutorials
+# Django Tutorials <!-- omit in toc -->
 
 A collection of tutorials I found useful for Django.
 
-## Repository
+## Table of Contents <!-- omit in toc -->
+
+- [Repository Details](#repository-details)
+  - [Official Tutorials](#official-tutorials)
+- [Links](#links)
+- [Ref](#ref)
+  - [Project directory structure](#project-directory-structure)
+  - [Creating a Django site/project](#creating-a-django-siteproject)
+  - [Creating a Django app](#creating-a-django-app)
+  - [Creating a Django admin/"superuser"](#creating-a-django-adminsuperuser)
+  - [Creating a Django CSRF secret key](#creating-a-django-csrf-secret-key)
+  - [Run the server](#run-the-server)
+    - [Development server](#development-server)
+
+## Repository Details
 
 ### Official Tutorials
 
