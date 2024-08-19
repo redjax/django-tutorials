@@ -36,6 +36,7 @@ This includes the [Django "Polls" tutorial](./official_tutorials/django-polls-ap
   - [Github: `django-debug-toolbar` Github](https://github.com/jazzband/django-debug-toolbar)
   - [Blog: How to set up `django-debug-toolbar`](https://dev.to/sm0ke/django-debug-toolbar-how-to-configure-2ap9)
   - [Docs: `django-debug-toolbar`](https://django-debug-toolbar.readthedocs.io/en/latest/installation.html)
+- [Blog: Securing Django best practices](https://medium.com/django-unleashed/securing-django-applications-best-practices-for-managing-secret-keys-and-environment-variables-f10f5a53490b)
 
 
 ## Ref
