@@ -117,6 +117,18 @@ urlpatterns = [
 ]
 ```
 
+To add your models to the admin site, in your app's `admin.py`:
+
+```python title="<app>/admin.py"
+from django.contrib import admin
+
+from .models import SomeModel
+
+admin.site.register(SomeModel)
+```
+
+For more control over your models, you can create [custom admin classes for your models](https://docs.djangoproject.com/en/5.1/intro/tutorial07/#customize-the-admin-form).
+
 ### Creating a Django admin/"superuser"
 
 Create an admin user for the `/admin` route.
