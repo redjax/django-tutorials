@@ -133,6 +133,15 @@ You should load this secret key from the environment, either a `.env` file, some
   python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
   ```
 
+- Using Django project's `manage.py`
+
+```shell title="Django manage.py shell"
+$ python manage.py shell
+
+>>> from django.core.management.utils import get_random_secret_key
+>>> print(get_random_secret_key())
+```
+
 - `create_django_secret.py` file
 
   ```python title="create_django_secret.py"
