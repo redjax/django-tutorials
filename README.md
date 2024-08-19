@@ -119,9 +119,15 @@ urlpatterns = [
 
 ### Creating a Django admin/"superuser"
 
-To prevent cross-site forgeries, generate a secret key and add replace `SECRET_KEY` in `settings.py`
+Create an admin user for the `/admin` route.
 
-#### Creating a Django CSRF secret key
+```shell title="Create superuser"
+python manage.py createsuperuser
+```
+
+### Creating a Django CSRF secret key
+
+To prevent cross-site forgeries, generate a secret key and add replace `SECRET_KEY` in `settings.py`
 
 **!! DO NOT HARDCODE THIS KEY IN SETTINGS.PY !!**
 
@@ -161,3 +167,14 @@ $ python manage.py shell
 Once you have a secret key, edit the Django project's `settings.py` file, find the `SECRET_KEY` variable, and set the value to the string created from running the command/file above.
 
 You can also use `Dynaconf` or some other method of loading the secret key from an eenvironment variable. This is required in Production.
+
+### Run the server
+
+#### Development server
+
+```shell title="Run Django development server"
+python manage.py runserver
+
+## Optionally set the development server address/port
+python manage.py runserver {}server-addr}:{}server-port}  ## i.e. 0.0.0.0:8000
+```
