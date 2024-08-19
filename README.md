@@ -1,6 +1,8 @@
 # Django Tutorials <!-- omit in toc -->
 
-A collection of tutorials I found useful for Django.
+![Python Django repository header image](./assets/img/repo-header.png)
+
+A collection of tutorials and resources I found useful for Django.
 
 ## Table of Contents <!-- omit in toc -->
 
